@@ -16,7 +16,7 @@ spring:
 ngs:
   clients:
     vinh-phuc:
-      url: http://localhost:8090/cms-master
+      url: http://localhost:8240/sys
     thai-nguyen:
       url: http://localhost:8090/cms-master
     hai-duong:

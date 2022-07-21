@@ -1,7 +1,6 @@
 package com.ngs.cms.master.controller;
 
 import com.common.dto.ResponseWrapper;
-import com.ngs.cms.master.config.ClientsProperties;
 import com.ngs.cms.master.dto.PostQuantityReportDto;
 import com.ngs.cms.master.service.PartnerService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -25,8 +24,6 @@ import java.util.Date;
 public class PartnerController {
 
   private final PartnerService partnerService;
-
-  private final ClientsProperties clientsProperties;
 
   @Operation(summary = "Báo cáo số lượng bài đăng cộng tác viên")
   @GetMapping("posts-quantity-report")
