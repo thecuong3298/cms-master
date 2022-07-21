@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springdoc.api.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,7 +31,7 @@ public class PartnerController {
   public ResponseWrapper<Page<PostQuantityReportDto>> getPartner(
       @Parameter(name = "fromDate", required = true, description = "Từ ngày", example = "01/12/2020 22:03:03") @RequestParam Date fromDate,
       @Parameter(name = "toDate", required = true, description = "Đến ngày", example = "22/12/2020 22:03:03") @RequestParam Date toDate,
-      @ParameterObject Pageable pageable) {
+      @ParameterObject @PageableDefault Pageable pageable) {
     return new ResponseWrapper<>(partnerService.getPostQuantityReport(fromDate, toDate, pageable));
   }
 }
