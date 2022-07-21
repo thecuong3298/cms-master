@@ -11,6 +11,12 @@ public class ClientsProperties {
 
   private Url vinhPhuc;
 
+  private Url thaiNguyen;
+
+  private Url haiDuong;
+
+  private Url longAn;
+
   @Data
   @Configuration
   public static class Url {

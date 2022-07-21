@@ -9,8 +9,17 @@ spring:
     username: el-course
     password: 123456aA
     driver-class-name: org.mariadb.jdbc.Driver
+  mvc:
+    format:
+      date: dd/MM/yyyy HH:mm:ss
 
 ngs:
   clients:
     vinh-phuc:
-      url: http://localhost:8080/cms-master
+      url: http://localhost:8090/cms-master
+    thai-nguyen:
+      url: http://localhost:8090/cms-master
+    hai-duong:
+      url: http://localhost:8090/cms-master
+    long-an:
+      url: http://localhost:8090/cms-master
