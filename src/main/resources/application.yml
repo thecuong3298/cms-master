@@ -2,3 +2,15 @@ server:
   port: 8090
   servlet:
     context-path: /cms-master
+
+spring:
+  datasource:
+    url: jdbc:mariadb://115.146.122.211:3306/cms_master
+    username: el-course
+    password: 123456aA
+    driver-class-name: org.mariadb.jdbc.Driver
+
+ngs:
+  clients:
+    vinh-phuc:
+      url: http://localhost:8080/cms-master
